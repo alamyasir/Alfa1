@@ -1,4 +1,6 @@
 import { Routes } from '@angular/router';
+import { LandingPageComponent } from './landing-page/landing-page.component';
+import { HomeComponent } from './AlfaMarine/components/home/home.component';
 // import { BreadCrumbComponent } from './layout/main-header/bread-crumb/bread-crumb.component';
 // import { DashboardComponent } from './components/dashboard/dashboard.component';
 // import { UsersListComponent } from './components/users-list/users-list.component';
@@ -18,8 +20,8 @@ export const routes: Routes = [
 
 
     // { path: 'login', component: LoginComponent },
-    // { path: '', component: LoginComponent },
-    // { path: 'signup', component: SignupComponent },
+    { path: '', component: LandingPageComponent },
+    { path: 'home', component: HomeComponent },
     // { path: 'forget-password', component: ForgetpasswordComponent},
     // { path: 'new-password', component: SetnewpasswordComponent},
     // { path: 'change-password', component: ChangePasswordComponent},
