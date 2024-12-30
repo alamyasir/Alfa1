@@ -1,0 +1,99 @@
+.png-button.png-button-solid {
+    .p-button {
+        // border: 1px solid var(--primaryclr);
+        // background-color: var(--primaryclr);
+        // color: #fff;
+        .p-button-label {
+            font-weight: 400;
+        }
+
+        //         &:hover {
+        //             background-color: var(--hoverclr);
+        //             border: 1px solid var(--hoverclr);
+        //             color: #fff;
+        //         }
+        //
+        //         &:active {
+        //             background-color: var(--activeclr);
+        //             border: 1px solid var(--activeclr);
+        //             color: #fff;
+        //         }
+    }
+}
+
+.png-button.png-button-solid.p-button {
+    // // border: 1px solid var(--primaryclr);
+    // // background-color: var(--primaryclr);
+    // // color: #fff;
+    // .p-button-label {
+    //     font-weight: 400;
+    // }
+
+    //     &:hover {
+    //         background-color: var(--hoverclr);
+    //         border: 1px solid var(--hoverclr);
+    //         color: #fff;
+    //     }
+    //
+    //     &:active {
+    //         background-color: var(--activeclr);
+    //         border: 1px solid var(--activeclr);
+    //         color: #fff;
+    //     }
+}
+
+.png-button.png-button-outline.p-button {
+    background-color: #fff;
+    border: 1px solid var(--primaryclr);
+    color: var(--primaryclr);
+    .p-button-label {
+        font-weight: 400;
+    }
+    // &:hover {
+    //     background-color: var(--hoverclr);
+    //     border: 1px solid var(--hoverclr);
+    //     color: #fff;
+    // }
+    // &:active {
+    //     background-color: var(--activeclr);
+    //     border: 1px solid var(--activeclr);
+    //     color: #fff;
+    // }
+    .p-button-icon {
+        font-size: 14px;
+    }
+}
+
+.png-btn-text .p-button {
+    // background-color: transparent;
+    // border: 1px solid transparent;
+    // color: var(--primary-color);
+    .p-button-label {
+        font-weight: 400;
+    }
+    &:hover {
+        // background-color: var(--primary-color);
+        // border: 1px solid var(--primary-color);
+        // color: #fff;
+    }
+    .p-button-icon {
+        font-size: 14px;
+    }
+}
+.png-button.png-button-solid-danger {
+    background-color: #e12d39 !important;
+    color: #fff !important;
+    border: 1px solid #e12d39 !important;
+}
+
+.png-button.png-button-outline-danger {
+    background-color: #fff !important;
+    color: #e12d39 !important;
+    border: 1px solid #e12d39 !important;
+}
+
+.png-button.png-button-outline-danger.p-button:enabled:hover {
+    background-color: #e12d39 !important;
+    color: #fff !important;
+    border: 1px solid #e12d39 !important;
+}

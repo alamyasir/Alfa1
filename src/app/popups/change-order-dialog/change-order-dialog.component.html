@@ -1,0 +1,26 @@
+<div class="png-dialog-content" id="">
+  <p-card class="png-card mb-5">
+    <p-tabs class="png-tab-horizontal" value="0" >
+      <p-tablist>
+        <p-tab value="0">Contractual Items</p-tab>
+        <p-tab value="1">Non Contractual Items</p-tab>
+      </p-tablist>
+      <p-tabpanels>
+        <p-tabpanel value="0">
+          <app-contractual-items></app-contractual-items>
+        </p-tabpanel>
+        <p-tabpanel value="1">
+          <app-non-contractual-items></app-non-contractual-items>
+        </p-tabpanel>
+      </p-tabpanels>
+    </p-tabs>
+  </p-card>
+  <div class="png-dailogbox-footer justify-content-end pr-4">
+    <button
+      pButton
+      class="png-button png-button-solid"
+      label="Save Items"
+      (click)="onDialogClose()"
+    ></button>
+  </div>
+</div>

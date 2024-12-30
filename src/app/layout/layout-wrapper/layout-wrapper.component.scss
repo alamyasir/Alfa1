@@ -1,0 +1,61 @@
+#sidebarContainer {
+    width: 250px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    z-index: 999;
+    background-color: #fff;
+    transition: all 0.3s;
+}
+::ng-deep .png-tree-menu-wrapper {
+    height: calc(100vh - 350px);
+    overflow: auto;
+}
+#wrapper-content {
+    margin-left: 250px;
+    min-height: 100vh;
+    transition: all 0.3s;
+}
+
+#wrapper-content.active {
+    margin-left: 0;
+    width: 100%;
+}
+
+.sidebar-wrapper.active {
+    margin-left: -250px;
+}
+
+.sectionmain {
+    padding: 0.75rem 1.25rem;
+    background: #f5f5f5;
+    .sectioncontent {
+        background: #fff;
+        padding: 1.25rem;
+        border-radius: 0.75rem;
+    }
+}
+
+.sidebar-footer {
+    padding: 0.5rem 1rem;
+    .img-div {
+        height: 100px;
+        text-align: center;
+        margin-bottom: 0.5rem;
+
+        img {
+            max-width: 100%;
+            max-height: 100%;
+            -o-object-fit: contain;
+            object-fit: contain;
+        }
+    }
+}
+.main-header-wrapper {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    background: #f9f9f9;
+    z-index: 888;
+}

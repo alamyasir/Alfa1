@@ -1,0 +1,27 @@
+<div class="abc">
+    <div class="card flex flex-column justify-center">
+        <div class="contract-btn">
+            <p-button class="png-button-contract" [outlined]="true" (click)="showContractsListDialog()"
+                styleClass="w-full">
+                <div class="flex align-items-center gap-2 w-full">
+                    <div class="icon-box">
+                        <i class="pi pi-user"></i>
+                    </div>
+                    <div class="flex align-items-center justify-content-between w-full">
+                        <div class="flex flex-column align-items-start">
+                            <p class="c-title m-0">Contract</p>
+                            <h4 class="c-heading m-0">Contract Name</h4>
+                        </div>
+                        <div>
+                            <i class="pi pi-angle-right"></i>
+                        </div>
+                    </div>
+                </div>
+            </p-button>
+        </div>
+        <div class="png-tree-menu-wrapper">
+            <p-tree [value]="files" class="png-tree" selectionMode="single" [(selection)]="selectedFile"
+                (onNodeSelect)="onNodeSelect($event)" />
+        </div>
+    </div>
+</div>

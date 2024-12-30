@@ -1,0 +1,70 @@
+::ng-deep .p-tree-node-leaf > .p-tree-node-content .p-tree-node-toggle-button {
+    display: none;
+}
+
+.contract-btn {
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    padding: 20px;
+}
+::ng-deep .png-button-contract {
+    .p-button {
+        border: 0 !important;
+        &:hover {
+            border: 0 !important;
+        }
+        .icon-box {
+            width: 40px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            min-width: 40px;
+            min-height: 40px;
+            background: #efeffd;
+            color: var(--primaryclr) !important;
+        }
+        .c-title {
+            font-size: 12px;
+            font-family: "Poppins-Regular";
+            color: #9ea8b7;
+        }
+        .c-heading {
+            color: #081021;
+            font-weight: normal;
+            font-family: "Poppins-Medium";
+            font-size: 14px;
+        }
+        .pi-angle-right {
+            font-weight: bold;
+            color: #081021;
+        }
+    }
+}
+::ng-deep .png-tree {
+    .p-tree {
+        .p-tree-node-content {
+            padding: 0.75rem 1rem;
+            border-radius: 30px;
+            color: #64748b;
+            font-family: "Poppins-Medium";
+            font-size: 14px;
+            gap: 0.75rem;
+        }
+        .p-tree-node-content.p-tree-node-selected {
+            background: #eef2ff;
+            color: var(--primaryclr);
+        }
+        .p-tree-node-content.p-tree-node-selected .p-tree-node-icon {
+            color: var(--primaryclr);
+        }
+        .p-tree-node-content.p-tree-node-selectable:not(.p-tree-node-selected):hover {
+            background: #eef2ff;
+            color: #081021 !important;
+        }
+        .p-tree-node-content.p-tree-node-selectable:not(.p-tree-node-selected):hover .p-tree-node-icon {
+            color: #081021 !important;
+        }
+    }
+}

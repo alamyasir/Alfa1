@@ -1,0 +1,30 @@
+<div id="sidebarContainer" class="sidebar-wrapper" [ngClass]="{ 'active': isSidebarActive }">
+    <div class="sidebar-header">
+        <img src="imgs/logos/logo.png" class="logo-style" alt="Logo">
+    </div>
+    <div class="sidebar-body">
+        <app-sidebar-menu></app-sidebar-menu>
+    </div>
+    <div class="sidebar-footer">
+        <div class="img-div">
+            <img src="imgs/sidebar/Illustration.png" class="footer-img" alt="Illustration">
+        </div>
+        <div class="footer-btn">
+            <button pButton class="png-button png-button-solid w-full" (click)="addContractDialog()"
+                label="New Contract"></button>
+        </div>
+
+    </div>
+</div>
+
+<div id="wrapper-content" class="wrapper-layout" [ngClass]="{ 'active': isSidebarActive }">
+    <div class="main-header-wrapper">
+        <app-main-header></app-main-header>
+    </div>
+    <button id="sidebarCollapse" class="btn btn-primary" (click)="toggleSidebar()">Toggle Sidebar</button>
+    <section class="sectionmain">
+        <section class="sectioncontent">
+            <router-outlet />
+        </section>
+    </section>
+</div>

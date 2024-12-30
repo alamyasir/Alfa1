@@ -1,0 +1,83 @@
+<div class="png-dialog-content" id="">
+  <div class="grid">
+    <div class="col-12 md:col-12 lg:col-6">
+      <div class="form-field-container">
+        <label class="form-field-label">Username</label>
+        <input type="text" class="png-input-text" placeholder="Placeholder" pInputText />
+        <p class="error-message">
+          <i class="fas fa-exclamation-triangle"></i>
+          <span>Error message here</span>
+        </p>
+      </div>
+    </div>
+    <div class="col-12 md:col-12 lg:col-6">
+      <div class="form-field-container">
+        <label class="form-field-label">Email</label>
+        <input type="text" class="png-input-text" placeholder="Placeholder" pInputText />
+        <p class="error-message">
+          <i class="fas fa-exclamation-triangle"></i>
+          <span>Error message here</span>
+        </p>
+      </div>
+    </div>
+    <div class="col-12 md:col-12 lg:col-6">
+      <div class="form-field-container">
+        <label class="form-field-label">Phone Number</label>
+        <div class="d-flex align-items-center gap-2">
+          <div class="group-phone">
+            <p-select class="png-dropdown png-dropdown-images" appendTo="body" [options]="phonenumbersList"
+              optionLabel="name">
+            </p-select>
+            <p-inputnumber class="png-input-number" mode="decimal" inputId="withoutgrouping" maxlength="7"
+              [useGrouping]="false" />
+          </div>
+        </div>
+        <p class="error-message">
+          <i class="fas fa-exclamation-triangle"></i>
+          <span>Error message here</span>
+        </p>
+      </div>
+    </div>
+    <div class="col-12 md:col-12 lg:col-6">
+      <div class="form-field-container">
+        <label class="form-field-label">User Status</label>
+        <p-selectButton class="png-select-button" [options]="userstatusOptions" optionLabel="label" optionValue="value"
+          id=""></p-selectButton>
+        <p class="error-message">
+          <i class="fas fa-exclamation-triangle"></i>
+          <span> Error message here </span>
+        </p>
+      </div>
+    </div>
+  </div>
+  <div>
+    <p class="font-bold">Assign Role and Responsibilities</p>
+    <p>Select the specific role and responsibilities you want to assign to this user based on their duties within the
+      project</p>
+    <div class="flex flex-column">
+      <div class="flex gap-3">
+        <p-toggleswitch [(ngModel)]="checked" class="png-input-switch" id="" />
+        <span>Users</span>
+      </div>
+      <div class="flex gap-3">
+        <p-toggleswitch [(ngModel)]="checked1" class="png-input-switch" id="" />
+        <span>Sites</span>
+      </div>
+      <div class="flex gap-3">
+        <p-toggleswitch [(ngModel)]="checked2" class="png-input-switch" id="" />
+        <span>Contracts</span>
+      </div>
+      <div class="flex gap-3">
+        <p-toggleswitch [(ngModel)]="checked3" class="png-input-switch" id="" />
+        <span>Item</span>
+      </div>
+      <div class="flex gap-3">
+        <p-toggleswitch [(ngModel)]="checked4" class="png-input-switch" id="" />
+        <span>Change Orders</span>
+      </div>
+    </div>
+  </div>
+  <div class="png-dailogbox-footer justify-content-end gap-2">
+    <button pButton class="png-button png-button-solid" label="Add" (click)="onDialogClose()"></button>
+  </div>
+</div>

@@ -1,0 +1,20 @@
+.png-table {
+    .p-datatable-thead > tr > th,
+    .p-datatable-sort-icon,
+    .p-datatable-sort-badge {
+        font-weight: normal;
+        background-color: #f8fafc;
+    }
+    .p-paginator {
+        justify-content: flex-end;
+    }
+    .p-datatable-thead > tr > th {
+        font-family: "Poppins-Medium";
+        font-size: 12px;
+        color: #1e293b;
+    }
+    .p-datatable-tbody > tr > td {
+        color: #64748b;
+        font-family: "Poppins-Regular";
+    }
+}

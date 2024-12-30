@@ -1,0 +1,372 @@
+.form-field-container {
+    margin-bottom: 16px;
+}
+
+.field-required::after {
+    content: " *";
+    color: #d32f2f;
+    font-size: 16px;
+    position: absolute;
+    margin-left: 4px;
+    top: 0px;
+}
+.form-edit-for-all .field-required::after {
+    content: " *";
+    color: #fff;
+    font-size: 16px;
+    position: absolute;
+    margin-left: 4px;
+    top: 0px;
+}
+
+.form-field-label {
+    color: var(--secondary-clr-text);
+    font-size: 13px;
+    font-family: "Poppins-Regular";
+    letter-spacing: 0.28px;
+    margin-bottom: 4px;
+    display: block;
+}
+.png-inputgroup {
+    .p-inputgroup > .p-component {
+        border-left: 0;
+    }
+    .p-password {
+        border-left: 0;
+        width: 100% !important;
+    }
+    .p-password-input {
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+    }
+}
+.png-input-password,
+.p-autocomplete,
+.p-dropdown,
+.p-multiselect,
+.p-chips,
+.p-calendar,
+p-inputnumber,
+.p-inputnumber,
+.p-input-icon-left,
+.p-input-icon-right,
+.p-inputtext,
+.p-textarea,
+.p-password,
+.p-password-input {
+    width: 100%;
+}
+
+.error-message {
+    letter-spacing: 0.22px;
+    color: #e12d39;
+    font-size: 12px;
+    font-family: "Poppins-Regular";
+    margin: 0;
+    margin-top: 4px;
+}
+
+.error-message i {
+    font-size: 12px;
+    margin-right: 2px;
+}
+
+.ng-invalid.ng-touched > .p-calendar .p-inputtext,
+.ng-invalid.ng-touched > .p-password .p-password-input,
+.ng-invalid.ng-touched > .p-calendar .p-datepicker-trigger,
+.ng-invalid.ng-touched > .p-calendar .p-datepicker-trigger:hover,
+.ng-invalid.ng-touched > .p-autocomplete .p-autocomplete-input,
+.ng-invalid.ng-touched > .p-selectbutton .p-button,
+.ng-invalid.ng-touched .ng-invalid.ng-touched > .p-dropdown,
+.ng-invalid.ng-touched > .p-inputnumber .p-inputnumber-input,
+.p-inputtext.ng-invalid.ng-touched {
+    border: 1px solid #f37079 !important;
+}
+
+.ng-invalid.ng-touched > .p-calendar .p-datepicker-trigger,
+.ng-invalid.ng-touched > .p-calendar .p-datepicker-trigger:hover {
+    border-left: 0 !important;
+}
+p-radiobutton.ng-dirty.ng-invalid > .p-radiobutton > .p-radiobutton-box {
+    border-color: #f37079;
+}
+.ng-invalid.ng-touched > .p-checkbox .p-checkbox-box {
+    border: 2px solid #f37079 !important;
+}
+
+.png-page-heading,
+.png-form-heading,
+.png-form-subheading {
+    min-height: 60px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.png-form-heading {
+    justify-content: space-between;
+}
+
+.png-page-heading p.page-heading,
+.png-form-heading p.form-heading,
+.png-form-subheading p.form-subheading {
+    margin: 0px;
+}
+
+.page-heading,
+.png-page-heading p.page-heading {
+    font-size: 24px;
+    font-family: "Poppins-SemiBold";
+    color: var(--primary-clr-text);
+}
+
+.form-heading,
+.png-form-heading p.form-heading {
+    font-size: 18px;
+    font-family: "Poppins-medium";
+    color: var(--primary-clr-text);
+    display: flex;
+    align-items: center;
+}
+
+.form-subheading,
+.png-form-subheading p.form-subheading {
+    font-size: 16px;
+    font-family: "Poppins-medium";
+    color: var(--primary-clr-text);
+    display: flex;
+    align-items: center;
+}
+
+/* info box added for signup revamp component to view multiple error messages 
+    10 JULY 2023
+*/
+
+.form-field-info-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.png-button-infobox .p-button {
+    width: 24px !important;
+    height: 24px !important;
+    border-radius: 50px;
+    margin-left: 12px;
+    border: none;
+    outline: none;
+    box-shadow: none;
+    overflow: initial;
+    color: var(--primary-clr-text);
+    box-shadow: none !important;
+    padding: 0px !important;
+    margin-bottom: 4px !important;
+}
+.png-button-infobox .p-button .pi {
+    font-size: 12px !important;
+}
+.png-overlay.png-overlay-infobox.p-overlaypanel::before,
+.png-overlay.png-overlay-infobox.p-overlaypanel::after {
+    display: none !important;
+}
+.png-overlay.png-overlay-infobox.p-overlaypanel {
+    margin-top: 0 !important;
+}
+
+.png-overlay.png-overlay-filters.p-overlaypanel.p-overlaypanel-flipped:before,
+.png-overlay.png-overlay-filters.p-overlaypanel.p-overlaypanel-flipped:after {
+    content: none !important;
+}
+
+/* rating star  */
+.png-rating-stars .p-rating .p-rating-icon:hover,
+.png-rating-stars .p-rating .p-rating-icon.p-rating-icon-active {
+    color: #ffb200 !important;
+}
+.png-rating-stars-container.lg .p-rating .p-rating-icon.p-icon.p-rating-cancel {
+    width: 1.75rem !important;
+    height: 1.75rem !important;
+    margin-top: 4px;
+    margin-right: 8px;
+}
+.direction-rtl .png-rating-stars-container.lg .p-rating .p-rating-icon.p-icon.p-rating-cancel {
+    margin-right: 0;
+    margin-left: 8px;
+}
+
+/* readonly fields CSS added 05 Dec 2023 */
+
+.p-inputtext.p-component::-moz-read-only,
+textarea:-moz-read-only {
+    background: #f8fcff !important;
+    opacity: 0.6 !important;
+}
+
+.p-inputtext.p-component:-moz-read-only,
+textarea:-moz-read-only {
+    background: #f8fcff !important;
+    opacity: 0.6 !important;
+}
+
+.p-inputtext.p-component:-moz-read-only,
+textarea:-moz-read-only {
+    background: #f8fcff !important;
+    opacity: 0.6 !important;
+}
+
+.p-inputtext.p-component:-moz-read-only,
+textarea:-moz-read-only {
+    background: #f8fcff !important;
+    opacity: 0.6 !important;
+}
+
+.p-inputtext.p-component:-moz-read-only,
+textarea:-moz-read-only {
+    background: #f8fcff !important;
+    opacity: 0.6 !important;
+}
+
+.p-inputtext.p-component:-moz-read-only,
+textarea:-moz-read-only {
+    background: #f8fcff !important;
+    opacity: 0.6 !important;
+}
+
+.p-inputtext.p-component:-moz-read-only,
+textarea:-moz-read-only {
+    background: #f8fcff !important;
+    opacity: 0.6 !important;
+}
+
+.p-inputtext.p-component:-moz-read-only,
+textarea:-moz-read-only {
+    background: #f8fcff !important;
+    opacity: 0.6 !important;
+}
+
+.p-inputtext.p-component:-moz-read-only,
+textarea:-moz-read-only {
+    background: #f8fcff !important;
+    opacity: 0.6 !important;
+}
+
+.p-inputtext.p-component:-moz-read-only,
+textarea:-moz-read-only {
+    background: #f8fcff !important;
+    opacity: 0.6 !important;
+}
+
+.p-inputtext.p-component:-moz-read-only,
+textarea:-moz-read-only {
+    background: #f8fcff !important;
+    opacity: 0.6 !important;
+}
+
+.p-inputtext.p-component:-moz-read-only,
+textarea:-moz-read-only {
+    background: #f8fcff !important;
+    opacity: 0.6 !important;
+}
+
+.p-inputtext.p-component:-moz-read-only,
+textarea:-moz-read-only {
+    background: #f8fcff !important;
+    opacity: 0.6 !important;
+}
+
+.p-inputtext.p-component:-moz-read-only,
+textarea:-moz-read-only {
+    background: #f8fcff !important;
+    opacity: 0.6 !important;
+}
+
+.p-inputtext.p-component:-moz-read-only,
+textarea:-moz-read-only {
+    background: #f8fcff !important;
+    opacity: 0.6 !important;
+}
+
+.p-inputtext.p-component:-moz-read-only,
+textarea:-moz-read-only {
+    background: #f8fcff !important;
+    opacity: 0.6 !important;
+}
+
+.p-inputtext.p-component:-moz-read-only,
+textarea:-moz-read-only {
+    background: #f8fcff !important;
+    opacity: 0.6 !important;
+}
+
+.p-inputtext.p-component:-moz-read-only,
+textarea:-moz-read-only {
+    background: #f8fcff !important;
+    opacity: 0.6 !important;
+}
+
+.p-inputtext.p-component:-moz-read-only,
+textarea:-moz-read-only {
+    background: #f8fcff !important;
+    opacity: 0.6 !important;
+}
+
+.p-inputtext.p-component:-moz-read-only,
+textarea:-moz-read-only {
+    background: #f8fcff !important;
+    opacity: 0.6 !important;
+}
+
+.p-inputtext.p-component:-moz-read-only,
+textarea:-moz-read-only {
+    background: #f8fcff !important;
+    opacity: 0.6 !important;
+}
+
+.p-inputtext.p-component:-moz-read-only,
+textarea:-moz-read-only {
+    background: #f8fcff !important;
+    opacity: 0.6 !important;
+}
+
+.p-inputtext.p-component:-moz-read-only,
+textarea:-moz-read-only {
+    background: #f8fcff !important;
+    opacity: 0.6 !important;
+}
+
+.p-inputtext.p-component:read-only,
+textarea:read-only {
+    background: #f8fcff !important;
+    opacity: 0.6 !important;
+}
+#hijriDatePicker input.form-control:disabled,
+.p-disabled,
+.p-dropdown.p-component.p-disabled,
+/* readonly only dropdown same CSS applied  */
+[ng-reflect-readonly="true"] > div.p-dropdown {
+    background: #f8fcff !important;
+    opacity: 0.6 !important;
+}
+/* slots view in VHS issue is fixed  */
+.png-btn-slot:disabled {
+    opacity: unset !important;
+}
+
+/* p number with Buttons BG color issue fixed  add and remove buttons */
+.p-button.p-inputnumber-button:disabled {
+    background: var(--primaryclr) !important;
+}
+
+/* ended readonly fields CSS added 05 Dec 2023 */
+
+.png-overlay.png-overlay-filters.p-overlaypanel:before,
+.png-overlay.png-overlay-filters.p-overlaypanel:after {
+    display: none !important;
+}
+.png-overlay.p-overlaypanel .p-overlaypanel-close {
+    background: #e0e5e9 !important;
+    color: #647f91 !important;
+    top: 12px !important;
+    right: 20px !important;
+    width: 1.5rem !important;
+    height: 1.5rem !important;
+}

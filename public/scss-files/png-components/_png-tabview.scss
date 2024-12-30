@@ -1,0 +1,29 @@
+/* Base styles for .png-tab-horizontal */
+.png-tab-horizontal {
+    .p-tablist {
+        /* Styles specific to .png-tab-horizontal */
+    }
+    .p-tab {
+        border-bottom: 1px solid #ddd;
+        color: #000;
+        background-color: #fff;
+        flex: 1;
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+        font-family: "Poppins-medium";
+        font-size: 14px;
+        font-weight: normal;
+        justify-content: center;
+    }
+    .p-tab-active {
+        color: var(--primaryclr);
+        border-bottom: 1px solid var(--primaryclr);
+    }
+    .p-tablist-active-bar {
+        background-color: var(--primaryclr);
+    }
+    .p-tabpanels {
+        padding-left: 0;
+        padding-right: 0;
+    }
+}

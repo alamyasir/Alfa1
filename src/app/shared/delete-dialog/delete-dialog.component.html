@@ -1,0 +1,35 @@
+<div class="png-dialog-no-header-content">
+  <div class="png-dialog-header-sm-dialogs">
+    <div class="header-icon-box danger">
+      <i class="pi pi-trash"></i>
+    </div>
+    <h5 class="header-title-box">Delete Confirmation</h5>
+  </div>
+
+  <div class="png-dialog-content">
+    <p class="png-text-info">
+      Are you sure you want to delete<span class="ff-poppins-medium">
+        Muhammad Ali Khan</span
+      >
+      ?
+    </p>
+
+    <div class="png-dialog-no-header-footer">
+      <div class="png-dailogbox-footer justify-content-end px-4">
+        <button
+          type="button"
+          pButton
+          class="png-button-text p-button-secondary p-button-text"
+          label="Cancel"
+          (click)="onClose()"
+        ></button>
+
+        <button
+          pButton
+          class="png-button png-button-solid-danger"
+          label="Delete"
+        ></button>
+      </div>
+    </div>
+  </div>
+</div>

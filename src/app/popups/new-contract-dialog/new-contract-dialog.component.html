@@ -1,0 +1,38 @@
+<div class="png-dialog-content" id="">
+    <div class="flex flex-column gap-4">
+        <div class="grid">
+            <div class="col-12">
+                <div class="flex flex-column png-radiobuttons-boxed">
+                    @for(contract of categories;let first=$first;track $index) {
+                    <div class="field-checkbox boxed-radio" [ngClass]="{ 'active': selectedContract === contract }"
+                        (click)="onContractSelect(contract)">
+                        <p-radiobutton class="png-radiobtn" [inputId]="contract.id" name="contract" [value]="contract"
+                            [(ngModel)]="selectedContract">
+                        </p-radiobutton>
+                        <div class="flex flex-column">
+                            <label class="radiobtn-label" [for]="contract.id">{{ contract.name }}</label>
+                            <p class="radiobtn-description">{{ contract.description }}</p>
+                        </div>
+                    </div>
+                    }
+                </div>
+            </div>
+            <div class="col-12">
+                <div class="form-field-container">
+                    <label class="form-field-label">Select Contract</label>
+                    <p-select class="png-dropdown" [options]="cities" appendTo="body" [(ngModel)]="selectedCity"
+                        optionLabel="name" placeholder="Select a City" [filter]="true" [checkmark]="true"
+                        [showClear]="true" styleClass="w-full" />
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="png-dailogbox-footer justify-content-end pr-4 gap-2">
+        <button pButton class="png-button png-button-outline" label="Close" (click)="onDialogClose()"></button>
+        <button pButton class="png-button png-button-solid" label="Add" [routerLink]="['layout/contractForm']"
+            (click)="onDialogClose()"></button>
+    </div>
+
+
+</div>

@@ -1,0 +1,28 @@
+<div class="tableblockcontainer">
+  <p-tabs class="png-tab-smblockscontainer" [(value)]="activeTab" scrollable>
+    <p-tablist class="gap-4">
+      <div class="grid w-full">
+        <div *ngFor="let tab of tabs" class="col-12 lg:col-4 xl:col-2">
+          <p-tab [value]="tab.value" [ngClass]="['tab-sm-blocks', tab.class]">
+            <div class="flex justify-content-between w-full">
+              <div>
+                <p> {{ tab.label }} </p>
+                <h3> {{ tab.count }} </h3>
+              </div>
+              <div [class]="'icon-bg ' + tab.color">
+                <i [class]="tab.icon"></i>
+              </div>
+            </div>
+          </p-tab>
+        </div>
+      </div>
+    </p-tablist>
+
+    <p-tabpanels>
+      <p-tabpanel *ngFor="let tab of tabs" [value]="tab.value">
+        <h2>Tab {{ tab.value + 1 }}</h2>
+        <app-sites-table></app-sites-table>
+      </p-tabpanel>
+    </p-tabpanels>
+  </p-tabs>
+</div>

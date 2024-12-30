@@ -1,0 +1,101 @@
+/* You can add global styles to this file, and also import other style files */
+
+@import "primeicons/primeicons.css";
+@import "primeflex/primeflex.scss";
+
+@import "../public/scss-files/layout/base";
+@import "../public/scss-files/layout/sidebar";
+
+@import "../public/scss-files/login/login";
+
+/* form controls components files */
+@import "../public/scss-files/png-components/form-generic";
+@import "../public/scss-files/png-components/png-accordion";
+@import "../public/scss-files/png-components/png-buttons";
+@import "../public/scss-files/png-components/png-checkboxes";
+@import "../public/scss-files/png-components/png-dialogbox";
+@import "../public/scss-files/png-components/png-dropdown";
+@import "../public/scss-files/png-components/png-fileupload";
+@import "../public/scss-files/png-components/png-input-fields";
+@import "../public/scss-files/png-components/png-slider";
+@import "../public/scss-files/png-components/png-stepper";
+@import "../public/scss-files/png-components/png-table";
+@import "../public/scss-files/png-components/png-tabview";
+@import "../public/scss-files/png-components/png-tabview-smblocks";
+@import "../public/scss-files/png-components/png-tabview-mdblocks";
+@import "../public/scss-files/png-components/png-timelines";
+@import "../public/scss-files/png-components/png-radiobutton";
+@import "../public/scss-files/png-components/png-toast";
+@import "../public/scss-files/png-components/png-tooltip";
+@import "../public/scss-files/png-components/read-view";
+
+body {
+    font-family: "Poppins-Regular", Arial, sans-serif;
+    font-size: 14px;
+    background: #f5f5f5;
+}
+
+@font-face {
+    font-family: "Poppins-Bold";
+    src: url("/fonts/Poppins/Poppins-Bold.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Poppins-Light";
+    src: url("/fonts/Poppins/Poppins-Light.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Poppins-Medium";
+    src: url("/fonts/Poppins/Poppins-Medium.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Poppins-SemiBold";
+    src: url("/fonts/Poppins/Poppins-SemiBold.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Poppins-Regular";
+    src: url("/fonts/Poppins/Poppins-Regular.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+:root {
+    --primaryclr: #4f46e5;
+    --secondaryclr: #e5f7f9;
+
+    --hoverclr: #02abbe;
+    --activeclr: #4bc8d6;
+
+    --primary-clr-text: #1c415b;
+    --primary-clr-dark-text: #132847;
+    --secondary-clr-text: #647f91;
+}
+.png-tree-menu-wrapper,
+.p-select-list-container,
+.p-drawer-content,
+.p-dialog-content,
+:root {
+    scrollbar-width: thin !important;
+    scrollbar-color: #dfeaef #f2fafe;
+}
+
+// html {
+//     font-size: 14px;
+// }
+
+body {
+    margin: 0;
+    min-height: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+    font-weight: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}

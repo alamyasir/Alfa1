@@ -1,0 +1,141 @@
+<p-card styleClass="png-card mb-5">
+  <div class="png-card-header">
+    <h3 class="png-card-title">Basic Information</h3>
+  </div>
+  <div class="grid">
+    <div class="col-12 md:col-6 lg:col-4">
+      <div class="form-field-container">
+        <label class="form-field-label">Change Order Name</label>
+        <input type="text" class="png-input-text" placeholder="Placeholder" pInputText />
+        <p class="error-message">
+          <i class="fas fa-exclamation-triangle"></i>
+          <span>Error message here</span>
+        </p>
+      </div>
+    </div>
+    <div class="col-12 md:col-6 lg:col-4">
+      <div class="flex gap-2">
+        <div class="form-field-container">
+          <label class="form-field-label field-required">Start Date</label>
+          <p-calendar class="png-calendar" [showIcon]="true" [monthNavigator]="true" appendTo="body"
+            [yearNavigator]="true" yearRange="2000:2030" [showButtonBar]="true" id=""></p-calendar>
+          <p class="error-message">
+            <i class="fas fa-exclamation-triangle"></i>
+            <span> Error message here </span>
+          </p>
+        </div>
+        <div class="form-field-container">
+          <label class="form-field-label field-required">End Date</label>
+          <p-calendar class="png-calendar" [showIcon]="true" [monthNavigator]="true" appendTo="body"
+            [yearNavigator]="true" yearRange="2000:2030" [showButtonBar]="true" id=""></p-calendar>
+          <p class="error-message">
+            <i class="fas fa-exclamation-triangle"></i>
+            <span> Error message here </span>
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="col-12 md:col-6 lg:col-4">
+      <div class="form-field-container">
+        <label class="form-field-label">Select Site</label>
+        <p-select class="png-dropdown" [options]="sites" appendTo="body" [(ngModel)]="selectedsite" optionLabel="name"
+          placeholder="Select a Site" [filter]="true" [checkmark]="true" [showClear]="true" styleClass="w-full" />
+      </div>
+    </div>
+    <div class="col-12 md:col-6 lg:col-4">
+      <div class="form-field-container">
+        <label class="form-field-label">Site Supervision</label>
+        <input type="text" class="png-input-text" placeholder="Placeholder" pInputText />
+        <p class="error-message">
+          <i class="fas fa-exclamation-triangle"></i>
+          <span>Error message here</span>
+        </p>
+      </div>
+    </div>
+    <div class="col-12 md:col-12 lg:col-8">
+      <div class="form-field-container">
+        <label class="form-field-label">Description</label>
+        <textarea class="png-input-textarea" cols="30" pTextarea></textarea>
+        <p class="error-message">
+          <i class="fas fa-exclamation-triangle"></i>
+          <span>Error message here</span>
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class="png-card-header">
+    <h3 class="png-card-title">Items</h3>
+    <div class="png-card-header-btns">
+      <p-iconField iconPosition="left" class="png-iconfield">
+        <p-inputIcon styleClass="pi pi-search" />
+        <input type="text" pInputText placeholder="Search" />
+      </p-iconField>
+      <button class="png-button png-button-solid" pButton pRipple label="Select Item" icon="pi pi-plus" iconPos="right"
+        (click)="showChangeOrderDialog()"></button>
+    </div>
+  </div>
+  <div class="png-card-body">
+    <div class="png-table-container">
+      <p-table [value]="items" dataKey="code" class="png-table" [paginator]="true" [rows]="10"
+        [rowsPerPageOptions]="[10, 20, 50]" paginatorDropdownAppendTo="body">
+        <!-- Table Header -->
+        <ng-template pTemplate="header">
+          <tr>
+            <th *ngFor="let header of tableHeaders">
+              <div class="blockheader-with-text">{{ header.header }}</div>
+            </th>
+          </tr>
+        </ng-template>
+
+        <!-- Table Body -->
+        <ng-template pTemplate="body" let-item>
+          <tr>
+            <td *ngFor="let header of tableHeaders">
+              <!-- Status Field: Display Badge -->
+              <div *ngIf="header.field === 'status'">
+                <p-tag class="png-tag" [severity]="
+                    item[header.field] === 'Approved'
+                      ? 'success'
+                      : item[header.field] === 'Rejected'
+                      ? 'danger'
+                      : item[header.field] === 'Draft'
+                      ? 'secondary'
+                      : item[header.field] === 'Pending'
+                      ? 'warn'
+                      : item[header.field] === 'Closed'
+                      ? 'info'
+                      : 'info'
+                  ">
+                  {{ item[header.field] }}
+                </p-tag>
+              </div>
+
+              <!-- Actions Field: Display Buttons -->
+              <div *ngIf="header.field === 'actions'" class="png-table-actions flex gap-2">
+                 <p-toast class="png-toast"/>
+                <p-button class="btnicon-sm" icon="pi pi-trash" [rounded]="true" [outlined]="true"
+                  severity="danger" (click)="showDeleteDialog()"></p-button>
+              </div>
+              <div *ngIf="header.field === 'quantity'" class="flex gap-2">
+                <p-inputnumber inputId="integeronly" class="png-input-number" />
+              </div>
+              <!-- Default Fields -->
+              <div class="block-with-text" *ngIf="
+                  header.field !== 'status' &&
+                  header.field !== 'actions' &&
+                  header.field !== 'quantity'
+                ">
+                {{ item[header.field] }}
+              </div>
+            </td>
+          </tr>
+        </ng-template>
+        <ng-template pTemplate="emptymessage">
+          <tr>
+            <td class="no-data-found" colspan="7">No data found</td>
+          </tr>
+        </ng-template>
+      </p-table>
+    </div>
+  </div>
+</p-card>

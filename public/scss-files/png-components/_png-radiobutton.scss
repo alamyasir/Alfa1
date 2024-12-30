@@ -1,0 +1,43 @@
+.png-radiobuttons-boxed {
+    .field-checkbox {
+        border: 1px solid #ddd !important;
+        padding: 1rem;
+        border-radius: 8px;
+        -webkit-border-radius: 8px;
+        -moz-border-radius: 8px;
+        -ms-border-radius: 8px;
+        -o-border-radius: 8px;
+        gap: 0.875rem;
+        align-items: start;
+    }
+    .field-checkbox.active {
+        background-color: #efeffd;
+        border: 1px solid var(--primaryclr) !important;
+    }
+    .field-checkbox {
+        cursor: pointer;
+    }
+    .radiobtn-label {
+        margin: 0;
+        color: #1e293b;
+        font-size: 14px;
+        font-family: "Poppins-Medium";
+    }
+    .radiobtn-description {
+        margin: 0;
+        color: #64748b;
+        font-size: 12px;
+        font-family: "Poppins-Regular";
+    }
+    .p-radiobutton {
+        margin-top: 2px;
+    }
+}
+
+.p-radiobutton-checked .p-radiobutton-box {
+    background-color: transparent !important;
+    border-color: var(--primaryclr) !important;
+}
+.p-radiobutton-checked .p-radiobutton-box .p-radiobutton-icon {
+    background-color: var(--primaryclr) !important;
+}

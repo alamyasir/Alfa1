@@ -1,0 +1,93 @@
+<div class="png-dialog-content" id="">
+  <div class="grid">
+    <div class="col-12">
+      <div class="form-field-container">
+        <label class="form-field-label">Site Code</label>
+        <div class="form-field-inline-btn flex align-items-center gap-2">
+          <input type="text" class="png-input-text" placeholder="Placeholder" pInputText />
+          <button class="png-button png-button-solid" pButton pRipple label="Search"></button>
+        </div>
+        <p class="error-message">
+          <i class="fas fa-exclamation-triangle"></i>
+          <span>Error message here</span>
+        </p>
+      </div>
+    </div>
+
+    <!------------------- NO DATA FOUND ------------------------ -->
+    <div class="grid w-full">
+      <div class="col-12">
+        <div class="text-center">
+          <p>No Result Found</p>
+          <P>Please <a href="" class="no-underline">Add a New </a>Site or research by another site code</P>
+        </div>
+      </div>
+    </div>
+    <!------------------- NO DATA FOUND ------------------------ -->
+
+    <div class="col-12">
+      <p-card styleClass="png-card mb-4">
+        <div class="grid">
+          <div class="col-12 md:col-12 lg:col-6">
+            <div class="form-field-container-read-view ">
+            <p class="read-view-title-sm">Site Code</p>
+            <p class="read-view-value-sm ml-0">Value</p>
+            </div>
+          </div>
+          <div class="col-12 md:col-12 lg:col-6">
+            <div class="form-field-container-read-view ">
+            <p class="read-view-title-sm">Site Name</p>
+            <p class="read-view-value-sm ml-0">Value</p>
+            </div>
+          </div>
+          <div class="col-12 md:col-12 lg:col-6">
+            <div class="form-field-container-read-view ">
+            <p class="read-view-title-sm">Location</p>
+            <p class="read-view-value-sm ml-0">Value</p>
+            </div>
+          </div>
+          <div class="col-12 md:col-12 lg:col-6">
+            <div class="form-field-container-read-view ">
+            <p class="read-view-title-sm">Organization</p>
+            <p class="read-view-value-sm ml-0">Value</p>
+            </div>
+          </div>
+
+          <div class="col-12 md:col-12 lg:col-6">
+            <div class="form-field-container-read-view ">
+            <p class="read-view-title-sm">Contract</p>
+            <p class="read-view-value-sm ml-0">Value</p>
+            </div>
+          </div>
+        </div>
+      </p-card>
+
+      <div class="grid">
+        <div class="col-12 md:col-12 lg:col-6">
+          <div class="form-field-container">
+            <label class="form-field-label">System Integrator User</label>
+            <p-select class="png-dropdown" [options]="SIuser" appendTo="body" [(ngModel)]="selecteduser"
+              optionLabel="name" placeholder="Select System Integrator User" [filter]="true" [checkmark]="true"
+              [showClear]="true" styleClass="w-full" />
+          </div>
+        </div>
+        <div class="col-12 md:col-12 lg:col-6">
+          <div class="form-field-container">
+            <label class="form-field-label">Approving Authority</label>
+            <p-select class="png-dropdown" [options]="approvingauthority" appendTo="body"
+              [(ngModel)]="selectedauthority" optionLabel="name" placeholder="Select Approving Authority"
+              [filter]="true" [checkmark]="true" [showClear]="true" styleClass="w-full" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="png-dailogbox-footer justify-content-end gap-2">
+    <button pButton class="png-button png-button-outline" label="Close" (click)="onDialogClose()"></button>
+
+    <button pButton class="png-button png-button-solid" label="Add" [disabled]="true"></button>
+
+    <button pButton class="png-button png-button-solid" label="Add New Site" (click)="showAddNewSiteDialog()"></button>
+  </div>
+</div>

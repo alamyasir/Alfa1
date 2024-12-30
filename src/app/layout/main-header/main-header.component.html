@@ -1,0 +1,70 @@
+<div class="main-header flex align-items-center justify-content-between">
+    <div class="flex flex-column">
+        <h2>Dashboard</h2>
+        <div class="card flex justify-center">
+            <app-bread-crumb></app-bread-crumb>
+        </div>
+    </div>
+    <div class="">
+        <div class="contract-btn">
+            <p-button class="png-button-contract" [outlined]="true" (click)="headermenu.toggle($event)"
+                styleClass="w-full">
+                <div class="flex align-items-center justify-content-center gap-2 w-full">
+                    <div class="icon-box">
+                        <span>EH</span>
+                    </div>
+                    <div class="flex align-items-center justify-content-between w-full">
+                        <div class="flex flex-column align-items-start">
+                            <h4 class="c-heading m-0">Esther Howard</h4>
+                            <p class="c-title m-0">System Integrator</p>
+                        </div>
+                        <div>
+                            <i class="pi pi-angle-down"></i>
+                        </div>
+                    </div>
+                </div>
+            </p-button>
+        </div>
+        <!-- <p-menu [model]="items" class="flex justify-center" styleClass="w-full md:w-60">  -->
+        <p-menu #headermenu class="userprofilemenu" [model]="items" [popup]="true">
+            <!-- <ng-template #start>
+                <span class="inline-flex items-center gap-1 px-2 py-2">
+                    <svg width="33" height="35" viewBox="0 0 33 35" fill="none" xmlns="http://www.w3.org/2000/svg"
+                        class="block mx-auto">
+                        <path d="..." fill="var(--primary-color)" />
+                    </svg>
+                    <span class="text-xl font-semibold">
+                        PRIME<span class="text-primary">APP</span>
+                    </span>
+                </span>
+            </ng-template> -->
+            <ng-template #submenuheader let-item>
+                <span class="text-primary font-bold">{{ item.label }}</span>
+            </ng-template>
+            <ng-template #item let-item>
+                <a pRipple class="flex items-center p-menu-item-link">
+                    <span [class]="item.icon"></span>
+                    <span class="ml-2">{{ item.label }}</span>
+                    <p-badge *ngIf="item.badge" class="ml-auto" [value]="item.badge" />
+                    <span *ngIf="item.shortcut"
+                        class="ml-auto border border-surface rounded bg-emphasis text-muted-color text-xs p-1">
+                        {{ item.shortcut }}
+                    </span>
+                </a>
+            </ng-template>
+            <!-- <ng-template #end>
+                <button pRipple
+                    class="relative overflow-hidden w-full border-0 bg-transparent flex items-start p-2 pl-4 hover:bg-surface-100 dark:hover:bg-surface-800 rounded-none cursor-pointer transition-colors duration-200">
+                    <p-avatar image="https://primefaces.org/cdn/primeng/images/demo/avatar/amyelsner.png"
+                        shape="circle" />
+                    <span class="inline-flex flex-col">
+                        <span class="font-bold">Amy Elsner</span>
+                        <span class="text-sm">Admin</span>
+                    </span>
+                </button>
+            </ng-template> -->
+
+        </p-menu>
+    </div>
+
+</div>

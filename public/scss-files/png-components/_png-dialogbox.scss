@@ -1,0 +1,255 @@
+.png-dialogbox.p-dialog .footer-buttons,
+.png-dialogbox.p-dialog .footer-add-below,
+.png-dailogbox-footer {
+    bottom: 0;
+    position: fixed;
+    right: 0;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 0.75rem;
+    width: 100%;
+    background: #fff;
+    padding-right: 30px;
+    padding-left: 30px;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+}
+
+.png-dialogbox {
+    .p-dialog-header {
+        border-bottom: 1px solid #ddd;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        .p-dialog-title {
+            font-family: "Poppins-Medium";
+            font-weight: normal;
+            font-size: 18px;
+        }
+        .p-button-text.p-button-secondary {
+            height: 40px;
+            width: 40px;
+        }
+    }
+    .p-dialog-content {
+        padding-top: 1.25rem;
+        margin-bottom: 1.25rem;
+    }
+        .header-icon-box {
+            height: 60px;
+            width: 60px;
+            border-radius: 50%;
+            color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 24px;
+            background-color: #e12d39;
+
+        .danger {
+                background-color: #e12d39;
+            }
+                        i {
+                            font-size: 24px;
+                            display: flex;
+                        }
+        }
+}
+
+
+
+.png-dialogbox-delete-alert {
+    text-align: center;
+    .delete-icon {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        i {
+                width: 40px;
+                height: 40px;
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background: #d45a5a;
+                color: #fff;
+                margin-bottom: 5px;
+            }
+                        h5 {
+                            margin-bottom: 8px;
+                            font-family: "Poppins-Medium";
+                            font-size: 20px;
+                            text-transform: capitalize;
+                            color: #d45a5a;
+                        }
+        }
+                p {
+                    font-size: 14px !important;
+                    font-family: "Poppins-Regular";
+                    color: var(--secondary-clr-text);
+                }
+}
+
+
+
+
+// .header-icon-box {
+//     height: 60px;
+//     width: 60px;
+//     border-radius: 50%;
+//     color: #fff;
+//     display: flex;
+//     align-items: center;
+//     justify-content: center;
+//     margin-bottom: 24px;
+// }
+
+.header-icon-box.success {
+    background-color: #53b175;
+}
+
+.header-icon-box.info {
+    background-color: var(--primaryclr);
+}
+
+.header-icon-box.danger {
+    background-color: #e12d39;
+}
+
+.header-icon-box i {
+    font-size: 24px;
+    display: flex;
+}
+
+
+
+
+
+
+.png-dialogbox.p-dialog .p-dialog-footer {
+    height: 60px !important;
+}
+
+.png-dialogbox.p-dialog .footer-buttons,
+.png-dialogbox.p-dialog .footer-add-below,
+.png-dailogbox-footer {
+    bottom: 0;
+    position: fixed;
+    right: 0;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    width: 100%;
+    background: #fff;
+    padding-right: 30px;
+    padding-left: 30px;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+}
+
+.png-dialogbox.p-dialog .p-dialog-header .p-dialog-title {
+    font-family: "Poppins-SemiBold";
+    font-size: 18px;
+    font-weight: 200;
+    color: var(--primary-clr-text);
+    letter-spacing: 0.54px;
+}
+
+.png-dialogbox.p-dialog {
+    background-color: #fff;
+}
+
+.png-dialogbox.p-dialog .p-dialog-header {
+    border-bottom: 1px solid #e0e5e9;
+    padding-bottom: 0.75rem;
+    margin: 0 24px;
+    padding-left: 0.3rem;
+    padding-right: 0.2rem;
+    margin-bottom: 10px;
+}
+
+.png-dialogbox.p-dialog .p-dialog-header .p-dialog-header-icon {
+    color: var(--secondary-clr-text);
+    opacity: 0.7;
+}
+
+/* new added 30 MAY 2023 */
+/* small dialogs which have no header underline */
+.png-dialog-no-header-content {
+    padding-bottom: 30px;
+}
+
+.png-dialog-header-sm-dialogs {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    background: #fff;
+    z-index: 2;
+}
+
+.png-dialog-header-sm-dialogs h5 {
+    color: var(--primary-clr-text);
+    font-size: 16px;
+    font-family: "Poppins-SemiBold";
+    margin-bottom: 16px;
+}
+
+.png-dialog.png-dialog-no-header.p-dialog .p-dialog-content {
+    padding-left: 40px !important;
+    padding-right: 40px !important;
+}
+
+.png-dialog-no-header-footer .png-dailogbox-footer {
+    justify-content: center;
+    width: 100%;
+    padding-right: 0;
+    /* min-height: 80px; */
+    min-height: 60px;
+}
+
+.p-dialog .p-dialog-header .p-dialog-header-icon:focus {
+    box-shadow: none !important;
+}
+
+.p-dialog .p-dialog-content {
+    /* padding-bottom: 60px !important;
+      margin-bottom: 20px; */
+}
+
+/* added for no header small dialogboxes 
+      19 JUNE 2023
+  */
+.header-icon-box {
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 24px;
+}
+
+.header-icon-box.success {
+    background-color: #53b175;
+}
+
+.header-icon-box.info {
+    background-color: var(--primaryclr);
+}
+
+.header-icon-box.danger {
+    background-color: #e12d39;
+}
+
+.header-icon-box i {
+    font-size: 24px;
+    display: flex;
+}
+

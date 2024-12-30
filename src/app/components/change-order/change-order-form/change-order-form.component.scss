@@ -1,0 +1,12 @@
+::ng-deep {
+    .png-card {
+        .p-card .p-card-body {
+            padding: 0.5rem;
+            height: 85vh;
+        }
+
+        .p-card {
+            box-shadow: none;
+        }
+    }
+}

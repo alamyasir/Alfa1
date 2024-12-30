@@ -1,0 +1,100 @@
+.png-tab-smblockscontainer {
+    .p-tab {
+        border-bottom: 0;
+        border: 2px solid transparent;
+    }
+    .p-tab:not(.p-tab-active):not(.p-disabled):hover,
+    .p-tab-active {
+        border: 2px solid var(--primaryclr);
+    }
+    .p-tablist-tab-list {
+        border-bottom: 0;
+    }
+
+    .tab-sm-blocks {
+        border-radius: 0.5rem;
+        &.primary,
+        &.primary:hover {
+            background-color: #efeffd !important;
+        }
+
+        &.secondary,
+        &.secondary:hover {
+            background-color: #f9fafb !important;
+        }
+
+        &.warning,
+        &.warning:hover {
+            background-color: #fff7ed !important;
+            color: #212529;
+        }
+
+        &.success,
+        &.success:hover {
+            background-color: #f4fcf3 !important;
+        }
+
+        &.danger,
+        &.danger:hover {
+            background-color: #fef2f2 !important;
+        }
+
+        &.primary-light,
+        &.primary-light:hover {
+            background-color: #eff6ff !important;
+            color: #004085;
+        }
+        p,
+        h3 {
+            font-weight: 100;
+            margin: 0;
+        }
+        p {
+            font-family: "Poppins-Light";
+            font-size: 12px;
+        }
+        h3 {
+            font-family: "Poppins-Medium";
+            font-size: 20px;
+        }
+    }
+
+    .icon-bg {
+        width: 24px;
+        height: 24px;
+        border-radius: 50%;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        -o-border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        i {
+            color: #fff;
+            font-size: 14px;
+        }
+    }
+
+    .icon-bg.blue {
+        background-color: #5d5fef;
+    }
+    .icon-bg.gray {
+        background-color: #64748b;
+    }
+
+    .icon-bg.orange {
+        background-color: #f97316;
+    }
+
+    .icon-bg.green {
+        background-color: #22c55e;
+    }
+
+    .icon-bg.red {
+        background-color: #ef4444;
+    }
+    .icon-bg.blue {
+        background-color: #5d5fef;
+    }
+}

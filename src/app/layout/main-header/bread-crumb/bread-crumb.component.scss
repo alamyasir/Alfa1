@@ -1,0 +1,17 @@
+::ng-deep .p-breadcrumb {
+    padding-top: 0.5rem !important;
+    padding-bottom: 0.5rem !important;
+    padding-left: 0 !important;
+    li {
+        .p-breadcrumb-item-link {
+            color: #ddd !important;
+            font-family: "Poppins-Regular";
+            font-size: 12px;
+        }
+    }
+    li:last-child {
+        .p-breadcrumb-item-link {
+            color: #5d5fef !important;
+        }
+    }
+}

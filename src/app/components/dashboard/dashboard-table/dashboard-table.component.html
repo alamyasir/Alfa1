@@ -1,0 +1,67 @@
+<p-card styleClass="png-card mb-5">
+    <div class="png-card-header">
+        <h3 class="png-card-title">Sites</h3>
+        <div class="png-card-header-btns">
+            <p-iconField iconPosition="left" class="png-iconfield">
+                <p-inputIcon styleClass="pi pi-search" />
+                <input type="text" pInputText placeholder="Global Search" />
+            </p-iconField>
+            <button pButton label="Advance Search" class="png-button png-button-solid" (click)=" showAdvanceSearchDialog()"></button>
+        </div>
+    </div>
+    <div class="png-card-body">
+        <div class="png-table-container">
+            <p-table [value]="siteTable" dataKey="userId" class="png-table" [paginator]="true" [rows]="10"
+                [rowsPerPageOptions]="[10, 20, 50]" paginatorDropdownAppendTo="body">
+                <ng-template pTemplate="header">
+                    <tr>
+                        <th *ngFor="let header of tableHeaders">
+                            <div class="blockheader-with-text">{{ header.header }}</div>
+                        </th>
+                    </tr>
+                </ng-template>
+
+                <ng-template pTemplate="body" let-site>
+                    <tr>
+                        <td *ngFor="let header of tableHeaders">
+                            <div *ngIf="header.field === 'status'">
+                                <p-tag class="png-tag" [severity]="
+                      site[header.field] === 'Approved'
+                        ? 'success'
+                        : site[header.field] === 'Rejected'
+                        ? 'danger'
+                        : site[header.field] === 'Draft'
+                        ? 'secondary'
+                        : site[header.field] === 'Pending'
+                        ? 'warn'
+                        : site[header.field] === 'Closed'
+                        ? 'info'
+                        : 'info'
+                    ">
+                                    {{ site[header.field] }}
+                                </p-tag>
+                            </div>
+
+
+                            <div class="png-table-actions" *ngIf="header.field === 'actions'" class="flex gap-2">
+                                <p-button class="btnicon-sm" icon="pi pi-eye" [rounded]="true" [outlined]="true"
+                                    severity="success"></p-button>
+                            </div>
+
+                            <div class="block-with-text" *ngIf="
+                    header.field !== 'status' && header.field !== 'actions'
+                  ">
+                                {{ site[header.field] }}
+                            </div>
+                        </td>
+                    </tr>
+                </ng-template>
+                <ng-template pTemplate="emptymessage">
+                    <tr>
+                        <td class="no-data-found" colspan="7">No data found</td>
+                    </tr>
+                </ng-template>
+            </p-table>
+        </div>
+    </div>
+</p-card>

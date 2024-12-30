@@ -1,0 +1,137 @@
+.png-tab-mdblockscontainer {
+    .p-tab {
+        background-color: #efeffd;
+        border-radius: 1rem;
+        height: 100%;
+        .icon-bg.blue i {
+            color: #5d5fef;
+        }
+        .icon-bg.gray i {
+            color: #64748b;
+        }
+
+        .icon-bg.orange i {
+            color: #f97316;
+        }
+
+        .icon-bg.green i {
+            color: #22c55e;
+        }
+
+        .icon-bg.red i {
+            color: #ef4444;
+        }
+        .icon-bg.blue i {
+            color: #5d5fef;
+        }
+        .infocard-header {
+            p,
+            h4 {
+                margin: 0;
+                font-weight: 100;
+            }
+            p {
+                font-family: "Poppins-Regular";
+                font-size: 14px;
+                color: #64748b;
+            }
+            h4 {
+                font-family: "Poppins-SemiBold";
+                font-size: 24px;
+                color: #1e293b;
+            }
+        }
+        .icon-block {
+            span {
+                font-weight: 100;
+                font-family: "Poppins-Regular";
+                font-size: 12px;
+                color: #64748b;
+            }
+        }
+    }
+    .p-tab:not(.p-tab-active):not(.p-disabled):hover,
+    .p-tab-active {
+        background-color: var(--primaryclr);
+        color: #fff;
+
+        .icon-bg.blue {
+            background-color: #5d5fef;
+            i {
+                color: #fff;
+            }
+        }
+        .icon-bg.gray {
+            background-color: #64748b;
+            i {
+                color: #fff;
+            }
+        }
+
+        .icon-bg.orange {
+            background-color: #f97316;
+            i {
+                color: #fff;
+            }
+        }
+
+        .icon-bg.green {
+            background-color: #22c55e;
+            i {
+                color: #fff;
+            }
+        }
+
+        .icon-bg.red {
+            background-color: #ef4444;
+            i {
+                color: #fff;
+            }
+        }
+        .icon-bg.blue {
+            background-color: #5d5fef;
+            i {
+                color: #fff;
+            }
+        }
+        .infocard-header {
+            p {
+                color: #fff;
+            }
+            h4 {
+                color: #fff;
+            }
+        }
+        .icon-block {
+            span {
+                color: #fff;
+            }
+        }
+    }
+
+    .p-tablist-tab-list {
+        flex-wrap: wrap;
+        border-bottom: 0;
+    }
+    .p-tabpanels {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .icon-bg {
+        width: 22px;
+        height: 22px;
+        border-radius: 50%;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        -o-border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        i {
+            color: #fff;
+            font-size: 12px;
+        }
+    }
+}
