@@ -1,5 +1,6 @@
 /* You can add global styles to this file, and also import other style files */
 
+
 @import "primeicons/primeicons.css";
 @import "primeflex/primeflex.scss";
 
@@ -33,9 +34,13 @@
 @import "../public/scss-files/png-components/read-view";
 
 body {
-    font-family: "Poppins-Regular", Arial, sans-serif;
-    font-size: 14px;
-    background: #f5f5f5;
+    // font-family: "Poppins-Regular", Arial, sans-serif;
+    // font-size: 14px;
+    // background: #f5f5f5;
+    font-family: "Montserrat-Arabic", sans-serif;
+    font-size: 16px;
+    line-height: 1.5rem;
+
 }
 
 @font-face {
@@ -80,9 +85,9 @@ body {
     --hoverclr: #02abbe;
     --activeclr: #4bc8d6;
 
-    --primary-clr-text: #1c415b;
-    --primary-clr-dark-text: #132847;
-    --secondary-clr-text: #647f91;
+    --primary-clr-text: #2c95d2;
+    --primary-clr-dark-text: #21386d;
+    // --secondary-clr-text: #647f91;
 }
 
 .png-tree-menu-wrapper,
@@ -92,6 +97,14 @@ body {
 :root {
     scrollbar-width: thin !important;
     scrollbar-color: #dfeaef #f2fafe;
+}
+
+.primary-clr-text{
+    color: var(--primary-clr-text);
+}
+
+.primary-clr-dark-text{
+    color: var(--primary-clr-dark-text);
 }
 
 // html {

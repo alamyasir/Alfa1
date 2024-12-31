@@ -62,7 +62,7 @@ h6 {
   color: var(--dark-color);
 }
 
-h1,
+
 h2,
 h3,
 h4,
@@ -71,10 +71,10 @@ h6 {
   font-weight: var(--font-weight-medium);
 }
 
-h1 {
+/* h1 {
   font-size: var(--h1-font-size);
   font-weight: var(--font-weight-bold);
-}
+} */
 
 h2 {
   font-size: var(--h2-font-size);
@@ -97,11 +97,11 @@ h6 {
   font-size: var(--h6-font-size);
 }
 
-p {
+/* p {
   color: var(--p-color);
   font-size: var(--p-font-size);
   font-weight: var(--font-weight-normal);
-}
+} */
 
 ul li {
   color: var(--p-color);
@@ -149,14 +149,17 @@ strong {
 }
 
 .section-overlay {
-  background-color: var(--secondary-color);
+  /* background-color: var(--secondary-color); */
+  background-image: url('https://nmdc-group.com/assets/media/lbM7MNX5cZ-1600.webp');
   position: absolute;
   top: 0;
   left: 0;
   pointer-events: none;
+  background-repeat: no-repeat;
+  background-size: cover;
   width: 100%;
   height: 100%;
-  opacity: 0.6;
+  /* opacity: 0.6; */
 }
 
 .testimonial-section .section-overlay {
@@ -841,7 +844,7 @@ strong {
 .hero-section {
   position: relative;
   overflow: hidden;
-  padding-top: 100px;
+  padding-top: 15%;;
   padding-bottom: 100px;
   min-height: 680px;
 }
@@ -860,9 +863,9 @@ strong {
 }
 
 @media screen and (min-width: 991px) {
-  .hero-section-full-height {
+  /* .hero-section-full-height {
     height: 85vh;
-  }
+  } */
 }
 
 
