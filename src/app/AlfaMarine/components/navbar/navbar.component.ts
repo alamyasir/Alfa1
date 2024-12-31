@@ -4,7 +4,7 @@ import { FooterComponent } from '../footer/footer.component';
 @Component({
   selector: 'app-navbar',
   standalone: true,
-  imports: [FooterComponent],
+  // imports: [FooterComponent],
   templateUrl: './navbar.component.html',
   styleUrl: './navbar.component.scss'
 })

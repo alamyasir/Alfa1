@@ -1,0 +1,29 @@
+.txt-big {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+}
+
+.button.cta, button.cta {
+    outline-offset: 1px;
+    --_padding-inline: clamp(0.75rem, 1vw, 1rem);
+    --_surface: var(--clr-whiter);
+    --_surface-hover: white;
+    --_icon: var(--clr-accent);
+    --_text: var(--clr-daintree);
+    color: var(--_text);
+    background-color: var(--_surface);
+    border: 0;
+    display: inline-flex;
+    width: fit-content;
+    align-items: center;
+    vertical-align: middle;
+    gap: .75rem;
+    line-height: 1.25rem;
+    padding-block: clamp(.5rem, 1vw, .75rem);
+    min-height: clamp(44px, 3.6vw, 52px);
+    transition: .2s ease;
+    border-radius: 8px;
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, .2);
+    text-align: start;
+    cursor: pointer;
+}

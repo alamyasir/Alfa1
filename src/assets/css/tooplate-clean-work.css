@@ -148,10 +148,23 @@ strong {
   background-color: var(--section-bg-color);
 }
 
+/* .section-overlay::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(to var(--dir-end), #002438 24%, rgba(0, 36, 56, 0.08));
+  mix-blend-mode: multiply;
+  opacity: .6;
+} */
 .section-overlay {
   /* background-color: var(--secondary-color); */
-  background-image: url('https://nmdc-group.com/assets/media/lbM7MNX5cZ-1600.webp');
+  background-image: url('https://nmdc-group.com/assets/media/SPMymd__fi-1600.webp');
   position: absolute;
+
   top: 0;
   left: 0;
   pointer-events: none;
@@ -623,7 +636,6 @@ strong {
 .navbar {
   background: transparent;
   position: absolute;
-  top: 49px;
   right: 0;
   left: 0;
   z-index: 9;
@@ -647,7 +659,7 @@ strong {
 }
 
 .navbar-expand-lg .navbar-nav .nav-link {
-  margin: 20px;
+  margin: 10px;
   padding: 0;
 }
 
@@ -844,9 +856,7 @@ strong {
 .hero-section {
   position: relative;
   overflow: hidden;
-  padding-top: 15%;;
-  padding-bottom: 100px;
-  min-height: 680px;
+  padding-top: 15%;
 }
 
 .hero-section .container {
