@@ -9,7 +9,7 @@ import { DynamicDialog } from 'primeng/dynamicdialog';
 import { RadioButton } from 'primeng/radiobutton';
 import { TreeModule } from 'primeng/tree';
 import { Breadcrumb } from 'primeng/breadcrumb';
-
+import { Timeline } from 'primeng/timeline';
 import { RouterModule } from '@angular/router';
 import { Menu } from 'primeng/menu';
 import { MenuModule } from 'primeng/menu';
@@ -77,7 +77,8 @@ import { PasswordModule } from 'primeng/password';
     FileUploadModule,
     ToastModule,
     Checkbox,
-    PasswordModule
+    PasswordModule,
+    Timeline,
   ],
   exports: [
     AvatarModule,
@@ -117,7 +118,8 @@ import { PasswordModule } from 'primeng/password';
     FileUploadModule,
     ToastModule,
     Checkbox,
-    PasswordModule
+    PasswordModule,
+    Timeline
   ],
 })
 export class PrimeNgModule { }

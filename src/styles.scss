@@ -5,7 +5,10 @@
 
 @import "../public/scss-files/layout/base";
 @import "../public/scss-files/layout/sidebar";
-
+// @import"../src/assets/css/bootstrap-icons.css";
+// @import"../src/assets/css/bootstrap.min.css";
+@import"../src/assets/css/magnific-popup.css";
+@import"../src/assets/css/tooplate-clean-work.css";
 @import "../public/scss-files/login/login";
 
 /* form controls components files */
@@ -41,24 +44,28 @@ body {
     font-weight: normal;
     font-style: normal;
 }
+
 @font-face {
     font-family: "Poppins-Light";
     src: url("/fonts/Poppins/Poppins-Light.ttf") format("truetype");
     font-weight: normal;
     font-style: normal;
 }
+
 @font-face {
     font-family: "Poppins-Medium";
     src: url("/fonts/Poppins/Poppins-Medium.ttf") format("truetype");
     font-weight: normal;
     font-style: normal;
 }
+
 @font-face {
     font-family: "Poppins-SemiBold";
     src: url("/fonts/Poppins/Poppins-SemiBold.ttf") format("truetype");
     font-weight: normal;
     font-style: normal;
 }
+
 @font-face {
     font-family: "Poppins-Regular";
     src: url("/fonts/Poppins/Poppins-Regular.ttf") format("truetype");
@@ -77,6 +84,7 @@ body {
     --primary-clr-dark-text: #132847;
     --secondary-clr-text: #647f91;
 }
+
 .png-tree-menu-wrapper,
 .p-select-list-container,
 .p-drawer-content,
